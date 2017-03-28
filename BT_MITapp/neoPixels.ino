@@ -32,26 +32,28 @@ void neoPix(){
   int r= atoi(cR);
   int g= atoi(cG);
   int b= atoi(cB);
-  char one = 1;
+  //char one = 1;
 
-  if(D1==1){
+  if(D1=='1'){
     pixels.setPixelColor(0, pixels.Color(r,g,b));
+    //Serial.println(D1);
   }
-  if(D2=="1"){
+  if(D2=='1'){
     pixels.setPixelColor(1, pixels.Color(r,g,b));
   }
-  if(D3==one){
+  if(D3=='1'){
     pixels.setPixelColor(2, pixels.Color(r,g,b));
   }
-  if(D4=="1"){
+  if(D4=='1'){
     pixels.setPixelColor(3, pixels.Color(r,g,b));
   }
-  if(D5=="1"){
+  if(D5=='1'){
     pixels.setPixelColor(4, pixels.Color(r,g,b));
   }
-  if(D6=="1"){
+  if(D6=='1'){
     pixels.setPixelColor(5, pixels.Color(r,g,b));
   }
+  pixels.show();
 //  for(int i=0;i<NUMPIXELS;i++){
 //   
 //    // pixels.Color takes RGB values, from 0,0,0 up to 255,255,255
@@ -60,8 +62,8 @@ void neoPix(){
 //    pixels.show(); // This sends the updated pixel color to the hardware.
 //  }
 // printRGB();
-    Serial.print(D1);
-    Serial.print(D2);
+//    Serial.println(D1);
+//    Serial.println(D2);
 //    Serial.print(",");
 //    Serial.print(g);
 //    Serial.print(",");
